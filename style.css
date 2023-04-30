@@ -357,7 +357,7 @@ body {
 
 .btn {
   display: grid;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .btn__link {
@@ -393,7 +393,7 @@ body {
   font-size: 20px;
   animation: pulse 2s ease infinite;
   
-  margin: 10px;
+  margin: 20px;
 }
 
 @keyframes pulse {
@@ -423,6 +423,48 @@ body {
   background-size: contain;
   background-position: center;
   z-index: -1; /*СВГ была повверх картинки, З индексом убрал ЗА картинку */
-  
 }
 
+/*Section About*/
+
+.about-banner__img {
+  width: 100%;
+}
+
+.about .container {
+  display: grid;
+  gap:30px;
+}
+
+.about-banner {
+  filter: drop-shadow(2px 2px 5px hsla(0, 0%, 0%, 0.08));
+}
+
+.about .section-text {
+  margin-block: 20px 13px;
+}
+
+.about-list {
+  margin-block-end: 50px;
+  margin-left: 15px;
+}
+
+.about-list .has-before {
+  line-height: 1.5;
+  padding-inline-start: 20px;
+  font-size: var(--fs-8);
+  font-family: var(--ff-cuprum);
+}
+
+.about-list .has-before:not(:last-child) {
+  margin-block-end: 15px;
+}
+
+.about-list .has-before::before {
+   top:5px;
+   left: -12px;
+   width: 10px;
+   height: 12px;
+   border-radius: 50%;
+   background-color: var(--go-green);
+}
